@@ -1,0 +1,23 @@
+[package]
+name = "agent-watcher"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Acknowledged transcript and lifecycle observation for coding agents"
+
+[dependencies]
+agent-parser = { path = "../agent-parser" }
+chrono = "0.4"
+dirs = "7"
+notify = "8.2"
+rusqlite = { version = "0.39", features = ["bundled"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+sysinfo = { version = "0.39.6", default-features = false, features = ["system"] }
+tempfile = "3"
+thiserror = "2"
+tokio = { version = "1", features = ["fs", "io-util", "macros", "rt-multi-thread", "sync", "time"] }
+tokio-util = "0.7"
+tracing = "0.1"
+
