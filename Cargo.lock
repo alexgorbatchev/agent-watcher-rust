@@ -5,6 +5,7 @@ version = 4
 [[package]]
 name = "agent-parser"
 version = "0.1.0"
+source = "git+https://github.com/alexgorbatchev/agent-parser-rust.git?rev=2c013b856c26ec215120a2c39973e16381c645dc#2c013b856c26ec215120a2c39973e16381c645dc"
 dependencies = [
  "chrono",
  "go-parse-duration",

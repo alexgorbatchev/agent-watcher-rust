@@ -29,15 +29,15 @@
 
 # Installation
 
-From a consuming Rust project beside this checkout:
+From a consuming Rust project:
 
 ```sh
-cargo add agent-watcher --path ../agent-watcher
+cargo add agent-watcher --git https://github.com/alexgorbatchev/agent-watcher-rust.git
 cargo add tokio --features macros,rt-multi-thread,time
 cargo add tokio-util
 ```
 
-This checkout has no published crate or configured Git remote.
+Cargo records the resolved Git revision in the consuming project's lockfile. This package is not published to crates.io.
 
 # Quick Start
 

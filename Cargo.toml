@@ -6,7 +6,7 @@ license = "MIT"
 description = "Acknowledged transcript and lifecycle observation for coding agents"
 
 [dependencies]
-agent-parser = { path = "../agent-parser" }
+agent-parser = { git = "https://github.com/alexgorbatchev/agent-parser-rust.git", rev = "2c013b856c26ec215120a2c39973e16381c645dc" }
 chrono = "0.4"
 dirs = "7"
 notify = "8.2"
